@@ -47,7 +47,7 @@ export default class extends Plugin {
               ctx.body = { action: 'passthrough' };
               return next();
             }
-            const result = await urlTrigger.evaluateUrl(path, 'GET', ctx);
+            const result = await urlTrigger.evaluateUrl(path, 'GET', ctx as any);
             ctx.body = result;
             return next();
           },
