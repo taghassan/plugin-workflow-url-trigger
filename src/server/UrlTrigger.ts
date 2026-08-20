@@ -156,7 +156,7 @@ export default class UrlTrigger extends Trigger {
     const node = processor.nodes.find((v) => processor.lastSavedJob.nodeId === v.id);
 
     // url-response node — read structured result
-    if (node?.type === 'url-response') {
+    if (node?.type === 'url-response' || node?.type ==='webhook-response') {
       return {
         type: lastJobResult.type,
         status: lastJobResult.statusCode ?? 200,
