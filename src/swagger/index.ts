@@ -23,6 +23,7 @@ const spec = {
             description: 'مصفوفة url وmatchMode وsync؛ لا تحتوي على إعدادات حساسة',
           },
         },
+        tags: ['Workflow URL Trigger'],
       },
     },
     '/urlTrigger:status': {
@@ -42,6 +43,7 @@ const spec = {
             description: 'يلزم تسجيل الدخول',
           },
         },
+        tags: ['Workflow URL Trigger'],
       },
     },
     '/urlTrigger:check': {
@@ -75,6 +77,7 @@ const spec = {
             description: 'يلزم تسجيل الدخول',
           },
         },
+        tags: ['Workflow URL Trigger'],
       },
     },
   },
@@ -87,6 +90,12 @@ const spec = {
       },
     },
   },
+  tags: [
+    {
+      name: 'Workflow URL Trigger',
+      description: 'استعراض والتحقق من مشغلات سير العمل عبر URL.',
+    },
+  ],
 };
 
 export default spec;
